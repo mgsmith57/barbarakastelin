@@ -1,0 +1,78 @@
+---
+---
+
+@import "variables";
+@import "nav";
+
+body {
+  background: black;
+  color: $colour-fg-primary;
+  font-family: $font;
+}
+
+main {
+  margin-top: 65px;
+  @media (min-width: $lg) {
+    margin-top: 144px;
+  }
+}
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  img {
+    max-width: 100%;
+  }
+
+  .intro {
+    font-size: 1.2rem !important;
+  }
+}
+
+.tbg-dark {
+  background: #00000044;
+  border-radius: 5px;
+}
+
+.tbg-light {
+  background: #ffffff44;
+  border-radius: 5px;
+}
+
+.img-fit {
+  width: 100%;
+  height: auto;
+}
+
+#hero-index {
+  background-image: url('/img/winter-trees.jpg');
+}
+
+#hero-index-2 {
+  //background-image: url('/img/rainforest.jpg');
+}
+
+footer {
+  position: relative;
+  border-top: 1px solid $colour-fg-nav;
+
+  &:before {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    top: -1.5rem;
+    background: #efe923;
+    left: 0;
+    right: 0;
+    content: "Books";
+    border: 1px solid #efe923;
+    z-index: 5;
+    color: #333;
+    font-weight: 700;
+    font-size: 19px;
+  }
+}

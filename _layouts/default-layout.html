@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        {% if page.title and page.title != "" %}{{ page.title }} | {% endif %}
+        {{site.title}}
+    </title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"/>
+    <link rel='stylesheet' id='divi-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='et-gf-roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&#038;subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese' type='text/css' media='all' />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?cb=1"/>
+</head>
+<body class="{{page.body-class}} {{layout.body-class}}">
+
+<div class="nav-container fixed-top">
+    <div class="logo fixed text-center pt-3">
+        <a href="/"><img src="/img/barb-logo.png" /></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main" id="main-navbar">
+        <button class="navbar-toggler logged-out-only" type="button" data-toggle="collapse" data-target="#nav-items" aria-controls="nav-items" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-items">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="/" >Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/" >About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/work-in-progress/" >Work In Progress</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact/" >Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<main>
+{{ content }}
+</main>
+
+<footer class="mt-4 p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fit" src="/img/when-snow-fell.jpg" />
+            </div>
+            <div class="col-3">
+                <a href="http://www.amazon.co.uk/Parrot-Tree-Barbara-Kastelin/dp/1784625299/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=" target="_blank">
+                    <img class="" src="/img/amazon-button.png">
+                </a>
+                <a href="http://www.troubador.co.uk/book_info.asp?bookid=3555" target="_blank">
+                    <img class="" src="/img/matador-button.png">
+                </a>
+            </div>
+            <div class="col-3">
+                <img class="img-fit" src="/img/the-parrot-tree.jpg" />
+            </div>
+            <div class="col-3">
+                <a href="http://www.amazon.co.uk/Parrot-Tree-Barbara-Kastelin/dp/1784625299/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=" target="_blank">
+                    <img class="" src="/img/amazon-button.png">
+                </a>
+                <a href="http://www.troubador.co.uk/book_info.asp?bookid=3555" target="_blank">
+                    <img class="" src="/img/matador-button.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE="
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+<script>
+    $(function() {
+        $('#main-navbar').waypoint(function() {
+            $('body').toggleClass('small-logo');
+        });
+    });
+</script>
+</body>
+</html>
