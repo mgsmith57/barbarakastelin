@@ -1,0 +1,17 @@
+<div class="row book">
+    <div class="col-sm-5">
+        <div class="cover"><img class="img-fit" src="{{include.cover}}" /></div>
+    </div>
+    <div class="col-sm-7 text-center text-sm-left">
+        <ul>
+            <li class="title pb-2">{{include.title}}</li>
+            <li class="d-none d-sm-block d-md-none">Buy from</li>
+            <li><a href="{{include.link-amazon}}" target="_blank">
+                <span class="d-sm-none d-md-inline">Buy from</span> Amazon.co.uk
+            </a></li>
+            <li><a href="{{include.link-troubador}}" target="_blank">
+                <span class="d-sm-none d-md-inline">Buy from</span> Troubador
+            </a></li>
+        </ul>
+    </div>
+</div>

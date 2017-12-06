@@ -47,27 +47,19 @@
 <footer class="mt-4 p-5">
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                <img class="img-fit" src="/img/when-snow-fell.jpg" />
+            <div class="col-sm-6">
+                {% include book.html
+                    cover="/img/when-snow-fell.jpg"
+                    title="When Snow Fell"
+                    link-amazon="http://www.amazon.co.uk/Parrot-Tree-Barbara-Kastelin/dp/1784625299/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr="
+                    link-troubador="http://www.troubador.co.uk/book_info.asp?bookid=3555" %}
             </div>
-            <div class="col-3">
-                <a href="http://www.amazon.co.uk/Parrot-Tree-Barbara-Kastelin/dp/1784625299/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=" target="_blank">
-                    <img class="" src="/img/amazon-button.png">
-                </a>
-                <a href="http://www.troubador.co.uk/book_info.asp?bookid=3555" target="_blank">
-                    <img class="" src="/img/matador-button.png">
-                </a>
-            </div>
-            <div class="col-3">
-                <img class="img-fit" src="/img/the-parrot-tree.jpg" />
-            </div>
-            <div class="col-3">
-                <a href="http://www.amazon.co.uk/Parrot-Tree-Barbara-Kastelin/dp/1784625299/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=" target="_blank">
-                    <img class="" src="/img/amazon-button.png">
-                </a>
-                <a href="http://www.troubador.co.uk/book_info.asp?bookid=3555" target="_blank">
-                    <img class="" src="/img/matador-button.png">
-                </a>
+            <div class="col-sm-6">
+                {% include book.html
+                cover="/img/the-parrot-tree.jpg"
+                title="The Parrot Tree"
+                link-amazon="http://www.amazon.co.uk/Parrot-Tree-Barbara-Kastelin/dp/1784625299/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr="
+                link-troubador="http://www.troubador.co.uk/book_info.asp?bookid=3555" %}
             </div>
         </div>
     </div>

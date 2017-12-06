@@ -1,0 +1,23 @@
+.book {
+  .cover {
+    //width: 60px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    a {
+      color: $colour-fg-nav;
+
+      &:hover {
+        color: $colour-fg-nav-hover;
+      }
+    }
+  }
+
+}
