@@ -12,6 +12,11 @@
       }
     }
   }
+  .navbar-brand {
+    img {
+      width: 238px;
+    }
+  }
 
   .logo {
     img {
@@ -26,8 +31,6 @@
 
   .navbar-toggler {
     color: $colour-fg-nav;
-    position: absolute;
-    top: -36px;
     border-width: 0;
 
     &:focus,
@@ -45,9 +48,18 @@
 }
 
 .small-logo {
-  .logo {
-    img {
-      width: 238px;
+  @media (min-width: $lg) {
+    .logo {
+      float: left;
+      padding: 1rem;
+
+      img {
+        width: 238px;
+      }
+    }
+
+    .navbar-collapse {
+      margin-left: -270px;
     }
   }
 }

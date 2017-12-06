@@ -21,10 +21,11 @@
 <body class="{{page.body-class}} {{layout.body-class}}">
 
 <div class="nav-container fixed-top">
-    <div class="logo fixed text-center pt-3">
+    <div class="logo fixed text-center pt-3 d-none d-lg-block">
         <a href="/"><img src="/img/barb-logo.png" /></a>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-main" id="main-navbar">
+        <a class="navbar-brand d-lg-none" href="/"><img src="/img/barb-logo.png" /></a>
         <button class="navbar-toggler logged-out-only" type="button" data-toggle="collapse" data-target="#nav-items" aria-controls="nav-items" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,16 +75,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-        integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE="
-        crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
-<script>
-    $(function() {
-        $('#main-navbar').waypoint(function() {
-            $('body').toggleClass('small-logo');
-        });
-    });
-</script>
+<script src="/js/application.min.js"></script>
 </body>
 </html>

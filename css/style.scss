@@ -47,11 +47,32 @@ main {
 }
 
 #hero-index {
+  padding-top: 80px;
+  margin-top: -80px;
   background-image: url('/img/winter-trees.jpg');
 }
 
 #hero-index-2 {
   //background-image: url('/img/rainforest.jpg');
+}
+
+.btn-outline-primary {
+  color: $colour-fg-nav;
+  border-color: $colour-fg-nav;
+
+  &:hover {
+    background: $colour-fg-nav;
+    color: $colour-bg-secondary;
+    border-color: $colour-fg-nav;
+  }
+
+    &:focus,
+    &:active {
+    background: $colour-fg-nav !important;
+    color: $colour-bg-secondary !important;
+    border-color: $colour-fg-nav !important;
+    box-shadow: 0 0 0 0.2rem rgba(239,235,35,.5) !important;
+  }
 }
 
 footer {

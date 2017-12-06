@@ -6,12 +6,35 @@ title: Contact
     <section class="row p-4 p-lg-5">
         <div class="col-md-6">
             <h2>Get in Touch</h2>
-            <p>Barbara was born in Switzerland. At school, her friends often begged her to tell them a funny story, one with exaggerations. Imagination carried Barbara along, as on a raft, through German, French and Russian language, their philosophies and literatures, as they were her family’s origins. Often she reverted to drawing and sketching people.</p>
-            <p>She studied French literature and philosophy at university, worked for the UN in Geneva and New York, and then in advertising. It was not a surprise that she should marry a British diplomat with whom she could travel to even more countries and revel in encounters with new cultures and interesting people.</p>
-            <p>At seventy now, she lives mostly in her Cambridge home and enjoys the magic her grandchildren make her part of. It became time to learn how to paint in oil, and a necessity to write novels in the hope that others might enjoy her exuberant stories.</p>
+            <form id="form-contact" action="/contact-thank-you" novalidate>
+                <input type="hidden" name="country">
+                <div class="row">
+                    <div class="col-lg-6 form-group">
+                        <label class="sr-only" for="contact-name">Name</label>
+                        <input name="Name" required maxlength="200" class="form-control rounded-0" id="contact-name"
+                               aria-describedby="contact-name-help" placeholder="Name">
+                        <div class="invalid-feedback">Please enter your name</div>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <label class="sr-only" for="contact-email">Email Address</label>
+                        <input name="Email"  required type="email" maxlength="200" class="form-control rounded-0" id="contact-email"
+                               aria-describedby="contact-email-help" placeholder="Email Address">
+                        <div class="invalid-feedback">Please enter a valid email</div>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                        <label class="sr-only" for="contact-message">Message</label>
+                        <textarea name="Message" required maxlength="5000" class="form-control rounded-0" id="contact-message"
+                                  aria-describedby="contact-message-help" placeholder="Message" rows="5"></textarea>
+                        <div class="invalid-feedback">Please enter a message</div>
+                    </div>
+                    <div class="col-lg-12 form-group text-right">
+                        <button type="submit" class="btn btn-outline-primary px-5 w-100">Send</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="col-md-6">
-            <img class="img-fit" src="/img/barbara.jpg" />
+            <img class="img-fit" src="/img/barbara.jpg"/>
         </div>
     </section>
 </div>
