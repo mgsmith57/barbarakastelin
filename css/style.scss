@@ -24,6 +24,12 @@ p {
   }
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid $colour-fg-nav;
+}
+
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
