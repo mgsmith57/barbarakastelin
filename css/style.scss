@@ -49,7 +49,7 @@ hr {
 }
 
 .tbg-light {
-  background: #ffffff44;
+  background: #ffffffcc;
   border-radius: 5px;
 }
 
@@ -61,7 +61,12 @@ hr {
 #hero-index {
   padding-top: 80px;
   margin-top: -80px;
-  background-image: url('/img/winter-trees.jpg');
+  background-image: url('/img/stacked-books.jpg');
+  background-size: contain;
+  background-color: white;
+  background-position: bottom right;
+  color: black;
+  min-height: 500px;
 }
 
 #hero-index-2 {
@@ -86,8 +91,7 @@ hr {
     box-shadow: 0 0 0 0.2rem rgba(239,235,35,.5) !important;
   }
 }
-
-footer {
+[data-title] {
   position: relative;
   border-top: 1px solid $colour-fg-nav;
 
@@ -95,14 +99,14 @@ footer {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
+    width: 150px;
     padding: 0.5rem 1rem;
     text-align: center;
     top: -1.5rem;
     background: #efe923;
     left: 0;
     right: 0;
-    content: "Books";
+    content: attr(data-title);
     border: 1px solid #efe923;
     z-index: 5;
     color: #333;
