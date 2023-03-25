@@ -1,4 +1,5 @@
 $(function () {
+    console.log("test")
     // nav resizer
     $(window).scroll(function () {
         $('body').toggleClass('small-logo', $(document).scrollTop() > 0);
@@ -18,7 +19,7 @@ $(function () {
 
         var submit = function (f, data) {
             $.ajax({
-                url: "https://formspree.io/barbarakastelin#hotmail.com".replace("#", "@"),
+                url: "https://formspree.io/f/moqznrdd",
                 method: "POST",
                 data: data,
                 dataType: "json",
