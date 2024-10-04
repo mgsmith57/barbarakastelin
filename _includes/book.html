@@ -6,12 +6,16 @@
         <ul>
             <li class="title pb-2">{{include.title}}</li>
             <li class="d-none d-sm-block d-md-none">Buy from</li>
-            <li><a href="{{include.link-amazon}}" target="_blank">
-                <span class="d-sm-none d-md-inline">Buy from</span> Amazon.co.uk
-            </a></li>
-            <li><a href="{{include.link-troubador}}" target="_blank">
-                <span class="d-sm-none d-md-inline">Buy from</span> Troubador
-            </a></li>
+            {% if include.link-amazon != null %}
+                <li><a href="{{include.link-amazon}}" target="_blank">
+                    <span class="d-sm-none d-md-inline">Buy from</span> Amazon.co.uk
+                </a></li>
+            {% endif %}
+            {% if include.link-troubador != null %}
+                <li><a href="{{include.link-troubador}}" target="_blank">
+                    <span class="d-sm-none d-md-inline">Buy from</span> Troubador
+                </a></li>
+            {% endif %}
         </ul>
     </div>
 </div>
